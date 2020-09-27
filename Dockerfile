@@ -1,4 +1,4 @@
-FROM linuxserver/rdesktop
+FROM lsiobase/rdesktop-web
 
 # set version label
 ARG BUILD_DATE
