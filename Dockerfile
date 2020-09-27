@@ -1,4 +1,4 @@
-FROM lsiobase/rdesktop-web
+FROM lsiobase/rdesktop-web:bionic
 
 # set version label
 ARG BUILD_DATE
