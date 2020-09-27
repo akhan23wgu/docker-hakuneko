@@ -8,7 +8,7 @@ LABEL build_version="hakuneko with guacamole version:- ${VERSION} Build-date:- $
 LABEL maintainer="shlagevuk"
 ENV APPNAME="hakuneko"
 ENV HAKUNEKO_VERSION="6.1.7"
-
+VOLUME /var/lib/tomcat8
 
 RUN \
  echo "**** install runtime packages ****" && \
@@ -19,6 +19,7 @@ RUN \
         python \
         wget \
         zenity \
+        chromium-browser \
 	libxss1 && \
  echo "**** install hakuneko ****" && \
  if [ -z ${HAKUNEKO_RELEASE+x} ]; then \
