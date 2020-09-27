@@ -1,4 +1,4 @@
-FROM lsiobase/guacgui
+FROM linuxserver/rdesktop
 
 # set version label
 ARG BUILD_DATE
